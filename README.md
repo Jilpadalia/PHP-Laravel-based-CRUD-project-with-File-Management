@@ -1,44 +1,66 @@
-# PHP (Laravel) Based CRUD Project with File Management
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-## Project Description
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-This project is a comprehensive CRUD (Create, Read, Update, Delete) application developed using the Laravel PHP framework, incorporating robust file management capabilities. The system is designed to handle standard database operations alongside efficient handling of file uploads and storage. Below is a detailed description of the project's technical aspects:
+## About Laravel
 
-### Features
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-1. **CRUD Operations**:
-    - **Create**: Allows users to add new records to the database. The `MemberController`'s `store` method is responsible for handling the creation of new entries, including validation and data insertion.
-    - **Read**: Displays records from the database in a tabular format. The `index` method in the `MemberController` retrieves and presents data efficiently, ensuring quick access and display.
-    - **Update**: Enables users to modify existing records. The `edit` and `update` methods in the `MemberController` handle data retrieval for editing and subsequently updating the records in the database.
-    - **Delete**: Provides functionality for removing records from the database. The `destroy` method ensures secure deletion with confirmation to prevent accidental data loss.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-2. **File Management**:
-    - **File Upload**: Supports the uploading of various file types associated with database records. The file management feature is seamlessly integrated into the CRUD operations, allowing files to be uploaded during the creation or updating of records.
-    - **File Storage**: Utilizes Laravel's file storage system to manage uploaded files, ensuring they are stored securely and can be easily retrieved. Files are organized systematically in the storage directory.
-    - **File Retrieval and Display**: Facilitates the retrieval and display of uploaded files. The system ensures that files are easily accessible and can be viewed or downloaded by users as required.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-3. **User Authentication and Authorization**:
-    - **Admin Authentication**: Implements a secure login system for admin users, requiring username and password validation. Upon successful authentication, users are redirected to the main index page.
-    - **Role-Based Access Control**: Ensures that only authorized users can perform certain actions, such as adding, editing, or deleting records.
+## Learning Laravel
 
-4. **Form Validation**:
-    - Comprehensive validation rules are applied to ensure data integrity and prevent invalid data from being stored in the database. Both server-side and client-side validations are implemented for robustness.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-5. **Blade Templating**:
-    - Utilizes Laravel's Blade templating engine to create dynamic and reusable views. The project includes various Blade templates for displaying forms, lists, and other UI components, enhancing the user experience.
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-6. **Routes and Controllers**:
-    - Routes are defined to map URLs to specific controller actions, ensuring clean and organized code structure. The `MemberController` handles the main CRUD operations, while additional controllers manage authentication and file handling.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-7. **Database Integration**:
-    - Integrates with a relational database (such as MySQL) to store and manage records. The project leverages Laravel's Eloquent ORM for seamless database interactions, including querying, inserting, updating, and deleting records.
+## Laravel Sponsors
 
-### Technical Stack
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-- **Framework**: Laravel
-- **Language**: PHP
-- **Database**: MySQL
-- **Templating Engine**: Blade
-- **Storage**: Local file storage (with potential for cloud storage integration)
-- **Authentication**: Laravel's built-in authentication system
-- **Validation**: Laravel's validation rules
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
